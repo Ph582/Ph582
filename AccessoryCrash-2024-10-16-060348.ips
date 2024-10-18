@@ -1,0 +1,440 @@
+{"bug_type":"305","timestamp":"2024-10-16 06:03:48.00 -0600","os_version":"iPhone OS 18.0.1 (22A3370)","roots_installed":0,"incident_id":"2E2A552A-85A7-4146-B063-15E23530FE54"}
+{
+  "accessory_type" : "audio",
+  "accessory_release_type" : "Release",
+  "accessory_os_train" : "RTKitOS 60",
+  "crashlogs" : [
+    {
+      "core" : "AP",
+      "crashlog" : {
+        "scenario" : {
+          "event_history" : [
+            {
+              "scenario" : "CONNECTION_IN_PROGRESS",
+              "state" : "OFF",
+              "timestamp" : 29075090
+            },
+            {
+              "scenario" : "DOCKED",
+              "state" : "OFF",
+              "timestamp" : 25876902
+            },
+            {
+              "scenario" : "IN_EAR",
+              "state" : "ON",
+              "timestamp" : 19667294
+            },
+            {
+              "scenario" : "A2DP",
+              "state" : "ON",
+              "timestamp" : 19112181
+            },
+            {
+              "scenario" : "IN_EAR",
+              "state" : "OFF",
+              "timestamp" : 7690872
+            },
+            {
+              "scenario" : "A2DP",
+              "state" : "OFF",
+              "timestamp" : 7332730
+            },
+            {
+              "scenario" : "BUD_SWAP_IN_PROGRESS",
+              "state" : "ON",
+              "timestamp" : 2733208
+            }
+          ],
+          "time_since_last_transition" : 2733208,
+          "routed_to_source" : {
+            "sw_ver" : 4608,
+            "connected" : 1,
+            "vid" : 76,
+            "pid" : 29453
+          },
+          "active_scenarios" : [
+            "CASE_LID_OPEN",
+            "COUPLED",
+            "BUD_SWAP_IN_PROGRESS"
+          ]
+        },
+        "registers" : null,
+        "tasks" : [
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000ab978",
+              "0x00000000000bacfe",
+              "0x00000000000abafc"
+            ],
+            "description" : "  0 power | 000\/000 |   256\/1024  | WAITING | 0x20002860"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x0000000000008df2",
+              "0x0000000000009498"
+            ],
+            "description" : "  1 System Thread | 005\/005 |  1456\/2048  | SEMWAIT | 0x20038510"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : "  2 rtbuddy | 025\/025 |  1008\/1536  | SEMWAIT | 0x2005b818"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : "  3 binlog | 015\/015 |   576\/1024  | SEMWAIT | 0x200338d8"
+          },
+          {
+            "stack" : [
+              "0x00000000000ab138",
+              "0x00000000000abe56",
+              "0x00000000000bc59c",
+              "0x00000000000abafc"
+            ],
+            "description" : "  4 log_flush | 015\/015 |   160\/2048  | SEMWAIT | 0x20033470"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : "  5 mainWorkLoop | 018\/018 |  3072\/5000  | SEMWAIT | 0x200319c0"
+          },
+          {
+            "stack" : [
+              "0x00000000000ab138",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : "  6 lib_worker | 015\/015 |   208\/1280  | SEMWAIT | 0x2002eeb0"
+          },
+          {
+            "stack" : [
+              "0x00000000000ab138",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : "  7 AOP_app | 015\/015 |   832\/2048  | SEMWAIT | 0x2002b6c0"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x00000000000ac17a",
+              "0x00000000000174b4",
+              "0x00000000000abafc"
+            ],
+            "description" : "  8 stack loop | 019\/019 |  1008\/3072  | SEMWAIT | 0x20028230"
+          },
+          {
+            "description" : "* 9 HCI Rx | 021\/021 |  3416\/4096  | RUNNABLE | 0"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : " 10 hci_thread | 021\/021 |   624\/1024  | SEMWAIT | 0x20025f58"
+          },
+          {
+            "stack" : [
+              "0x00000000000ab138",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : " 11 AudioMgr | 020\/020 |  2656\/4096  | SEMWAIT | 0x2001e390"
+          },
+          {
+            "stack" : [
+              "0x000000000000953c",
+              "0x00000000000abe56",
+              "0x00000000000b7682",
+              "0x00000000000abafc"
+            ],
+            "description" : " 12 lrs_workloop | 019\/019 |   920\/2048  | SEMWAIT | 0x2001cf40"
+          }
+        ],
+        "uuid" : null,
+        "call-stack" : {
+          "stack" : [
+            "0x00000000000b6c66",
+            "0x00000000000b6aac",
+            "0x00000000000b68a2",
+            "0x000000000000a036",
+            "0x000000000001030e",
+            "0x0000000000010332",
+            "0x0000000000018fd6",
+            "0x000000000001aa3a",
+            "0x00000000000356c0",
+            "0x00000000000185d2",
+            "0x00000000000b76fa",
+            "0x00000000000abafc",
+            "000000000000000000"
+          ],
+          "stack-description" : "Faulting task 9 Call Stack:"
+        },
+        "exception" : "0x20",
+        "mailboxes" : [
+          {
+            "registers" : {
+              "AKF_KIC_INBOX_CTRL" : "0x08022201",
+              "AKF_KIC_MAILBOX_SET" : "0x00000001",
+              "AKF_AP_OUTBOX_CTRL" : "0x0802ee01",
+              "AKF_AP_MAILBOX_SET" : "0x00000001"
+            },
+            "route-number" : "1",
+            "log" : "    dir   endpoint      epnum timestamp           msg\n    ====  ============  ===== ==================  ==================\n    [RX]       user01      32 0x00000000021679b0  0x20070c37000e244f\n    [TX]       user01      32 0x0000000002167ad0  0x2007000011fc13a1\n    [RX]       user01      32 0x0000000002167d20  0x2007fc13000f2450\n    [RX]       user01      32 0x00000000021831c4  0x20071301ffff2451\n    [TX]       user01      32 0x0000000002192d74  0x200701000c0001a2\n    [TX]       user01      32 0x0000000002193058  0x20070000010c1aa3\n    [RX]       user01      32 0x000000000219333c  0x20070c1a000e2452\n    [TX]       user01      32 0x00000000021936c4  0x2007000007fd3fa4\n    [RX]       user01      32 0x0000000002193970  0x2007fd3f000e2453\n    [TX]       user01      32 0x0000000002193bc0  0x2007000008fd41a5\n    [RX]       user01      32 0x0000000002193dc4  0x2007fd41000e2454\n    [RX]       user01      32 0x000000000219902c  0x2007000000132455\n    [RX]       user01      32 0x0000000002199ee4  0x2007000d20012556\n    [TX]       user01      32 0x000000000219a2b0  0x2007000004080da6\n    [RX]       user01      32 0x000000000219a450  0x2007080d000e2457\n    [TX]       user01      32 0x000000000219aaf0  0x200701000c0001a7\n    [TX]       user01      32 0x000000000219ba1c  0x20070100130001a8\n    [RX]       user01      32 0x000000000219c5e0  0x2007000000132458\n    [RX]       user01      32 0x000000000219d498  0x2007000e20012559\n    [TX]       user01      32 0x000000000219d76c  0x2007000001fc17a9\n    [RX]       user01      32 0x000000000219db04  0x2007fc17000e245a\n    [TX]       user01      32 0x000000000219e3f4  0x20070100120001aa\n    [RX]       user01      32 0x00000000021c236c  0x2007000b2001255b\n    [TX]       user01      32 0x00000000021c25d4  0x2007000003fc11ab\n    [RX]       user01      32 0x00000000021c27ec  0x2007fc11000f245c\n    [RX]       user01      32 0x00000000021c2854  0x20071100ffff245d\n    [TX]       user01      32 0x00000000021d95ac  0x200701008d0001ac\n    [RX]       user01      32 0x00000000021e9e24  0x200700000013245e\n    [TX]       user01      32 0x00000000023f86cc  0x20070000030406ad\n    [RX]       user01      32 0x00000000023f8978  0x20070406000f245f\n    [RX]       user01      32 0x000000000241ddb8  0x2007000000052460\n    [RX]       user01      32 0x0000000002421910  0x20070500ffff2461",
+            "mailbox-error" : "0"
+          },
+          {
+            "registers" : {
+              "AKF_KIC_INBOX_CTRL" : "0x0802bb01",
+              "AKF_KIC_MAILBOX_SET" : "0x00000001",
+              "AKF_AP_OUTBOX_CTRL" : "0x08028801",
+              "AKF_AP_MAILBOX_SET" : "0x00000001"
+            },
+            "route-number" : "0",
+            "log" : "    dir   endpoint      epnum timestamp           msg\n    ====  ============  ===== ==================  ==================\n    [RX]       user05      36 0x0000000001ce257c  0x0085000000000000\n    [TX]       syslog       2 0x0000000001ce2ab8  0x0050000000000007\n    [TX]       user04      35 0x0000000001ce2ccc  0x00a2000000000000\n    [RX]       user04      35 0x0000000001ce2dd0  0x0085000000000000\n    [TX]       user05      36 0x0000000001ce4d74  0x00a2000000000000\n    [RX]       user05      36 0x0000000001ce4f10  0x0085000000000000\n    [TX]       user06      37 0x0000000001ce540c  0x00a2000000000000\n    [RX]       user25      56 0x0000000001ce5514  0x00020000000001c8\n    [RX]       user06      37 0x0000000001ce55a4  0x0085000000000000\n    [TX]       user25      56 0x0000000001ce6754  0x00020000000001c8\n    [TX]   management       0 0x0000000001cf41a4  0x003000000000001d\n    [RX]   management       0 0x0000000001cf426c  0x004000000000001d\n    [TX]   management       0 0x0000000001de8400  0x003000000000001e\n    [RX]   management       0 0x0000000001de84c4  0x004000000000001e\n    [TX]   management       0 0x0000000001edc62c  0x003000000000001f\n    [RX]   management       0 0x0000000001edc6f0  0x004000000000001f\n    [TX]   management       0 0x0000000001fd0774  0x0030000000000020\n    [RX]   management       0 0x0000000001fd07c4  0x0040000000000020\n    [TX]   management       0 0x00000000020c4a70  0x0030000000000021\n    [RX]   management       0 0x00000000020c4b38  0x0040000000000021\n    [TX]       user05      36 0x000000000211eb24  0x00a2000000000000\n    [RX]       user05      36 0x000000000211ecbc  0x0085000000000000\n    [TX]       user05      36 0x000000000212b034  0x00a2000000000000\n    [RX]       user05      36 0x000000000212b3c8  0x0085000000000000\n    [TX]       user05      36 0x000000000212b5ec  0x00a2000000000000\n    [RX]       user05      36 0x000000000212b700  0x0085000000000000\n    [TX]   management       0 0x00000000021b8be0  0x0030000000000022\n    [RX]   management       0 0x00000000021b8ca8  0x0040000000000022\n    [TX]   management       0 0x00000000022acd3c  0x0030000000000023\n    [RX]   management       0 0x00000000022ace00  0x0040000000000023\n    [TX]   management       0 0x00000000023a1044  0x0030000000000024\n    [RX]   management       0 0x00000000023a1108  0x0040000000000024",
+            "mailbox-error" : "0"
+          },
+          {
+            "registers" : {
+              "AKF_KIC_INBOX_CTRL" : "0x00000000",
+              "AKF_KIC_MAILBOX_SET" : "0x00000000",
+              "AKF_AP_OUTBOX_CTRL" : "0x00000000",
+              "AKF_AP_MAILBOX_SET" : "0x00000000"
+            },
+            "route-number" : "2",
+            "log" : "    dir   endpoint      epnum timestamp           msg\n    ====  ============  ===== ==================  ==================\n    [RX]       user10      41 0x00000000020f7be0  0xfeed11112222000b\n    [TX]       user10      41 0x00000000020f9eb0  0xfeed11112222abab\n    [RX]       user10      41 0x00000000020fa2f4  0xfeed11112222000b\n    [RX]       user10      41 0x00000000020fca00  0xfeed11112222000b\n    [RX]       user10      41 0x00000000020ff10c  0xfeed11112222000b\n    [TX]       user10      41 0x00000000021013dc  0xfeed11112222abab\n    [RX]       user10      41 0x0000000002101820  0xfeed11112222000b\n    [RX]       user10      41 0x0000000002103f28  0xfeed11112222000b\n    [RX]       user10      41 0x0000000002106638  0xfeed11112222000b\n    [TX]       user10      41 0x0000000002108904  0xfeed11112222abab\n    [RX]       user10      41 0x0000000002108d4c  0xfeed11112222000b\n    [RX]       user10      41 0x000000000210b454  0xfeed11112222000b\n    [RX]       user10      41 0x000000000210db64  0xfeed11112222000b\n    [TX]       user10      41 0x000000000210fe30  0xfeed11112222abab\n    [RX]       user10      41 0x0000000002110274  0xfeed11112222000b\n    [RX]       user10      41 0x0000000002112980  0xfeed11112222000b\n    [TX]       user10      41 0x000000000211325c  0xfeed11112222abab\n    [RX]       user25      56 0x00000000021132bc  0x3802000000000612\n    [RX]       user10      41 0x00000000021151cc  0xfeed11112222000b\n    [RX]       user10      41 0x00000000021177a4  0xfeed11112222000b\n    [TX]       user25      56 0x0000000002119368  0x0002000000000612\n    [RX]       user25      56 0x0000000002119388  0x380200000000067c\n    [RX]       user10      41 0x0000000002119eb8  0xfeed11112222000b\n    [TX]       user10      41 0x000000000211b46c  0xfeed11112222abab\n    [TX]       user10      41 0x000000000211b4b4  0xfeed11112222abab\n    [RX]       user10      41 0x000000000211b678  0xfeed11112222000b\n    [RX]       user10      41 0x000000000211cc6c  0xfeed11112222000b\n    [TX]   management       0 0x000000000211dd50  0x0060000000000000\n    [TX]       user25      56 0x000000000211e378  0x000200000000067c\n    [RX]     remotefs       5 0x000000000211e428  0x0001000000000000\n    [TX]     remotefs       5 0x000000000211e454  0x0081000000000000\n    [RX]   management       0 0x000000000211e488  0x0070000000000000",
+            "mailbox-error" : "3"
+          }
+        ],
+        "crashlog-version" : "03.03",
+        "panic" : "PANIC"
+      }
+    },
+    {
+      "core" : "AOP",
+      "crashlog" : {
+        "scenario" : null,
+        "registers" : "ipsr=0x0003a0d1(Unknown) control=0x0003a0c9 primask=0x00000000 basepri=0x000000bc fltmsk=0x00000000\n                  Faulting pc=0x00045af8            \n  r00=0x00000001  r01=0x2020b3a0  r02=0xcafe4b0b  r03=0x00000000\n  r04=0x00000010  r05=0x00000001  r06=0x00000000  r07=0x2020bd30\n  r08=0x20209738  r09=0x00000010  r10=0x00000021  r11=0x00000000\n  r12=0x0003e0f1   sp=0x00000000   lr=0x00045aed xpsr=0x41000000\nexret=0xfffffffd",
+        "tasks" : [
+          {
+            "stack" : [
+              "0x000000000003acd8",
+              "0x000000000003b822",
+              "0x00000000000451a8",
+              "0x000000000003b574"
+            ],
+            "description" : "  0 audio | 017\/017 |   696\/4096  | SEMWAIT | 0x202389a0"
+          },
+          {
+            "stack" : [
+              "0x000000000003acd8",
+              "0x000000000003b822",
+              "0x00000000000451a8",
+              "0x000000000003b574"
+            ],
+            "description" : "  1 rtk_ep_work | 025\/025 |   600\/1024  | SEMWAIT | 0x2021afa0"
+          },
+          {
+            "description" : "* 2 power | 031\/031 |   688\/1536  | RUNNABLE | 0x2020af10"
+          },
+          {
+            "stack" : [
+              "0x000000000003acd8",
+              "0x000000000003b822",
+              "0x00000000000451a8",
+              "0x0000000000009db2",
+              "0x0000000000038fec"
+            ],
+            "description" : "  3 main | 015\/015 |  3144\/4096  | SEMWAIT | 0x202769a8"
+          },
+          {
+            "stack" : [
+              "0x000000000003acd8",
+              "0x000000000003b822",
+              "0x00000000000451a8",
+              "0x000000000003b574"
+            ],
+            "description" : "  4 i2c_worker | 021\/021 |   280\/2048  | SEMWAIT | 0x2020cc20"
+          },
+          {
+            "stack" : [
+              "0x000000000003acd8",
+              "0x000000000003b822",
+              "0x000000000001ce3e",
+              "0x000000000001ce14",
+              "0x000000000003b574"
+            ],
+            "description" : "  5 voicetrigger | 013\/013 |  3160\/4096  | SEMWAIT | 0x20208fb0"
+          }
+        ],
+        "uuid" : null,
+        "call-stack" : {
+          "stack" : [
+            "0x0000000000045af8",
+            "0x000000000004598c",
+            "0x00000000000457da",
+            "0x000000000003b574",
+            "000000000000000000"
+          ],
+          "stack-description" : "Faulting task 2 Call Stack:"
+        },
+        "exception" : "0x21",
+        "mailboxes" : [
+          {
+            "registers" : {
+              "AKF_AP_OUTBOX_CTRL" : "0x0802bb01",
+              "AKF_KIC_INBOX_CTRL" : "0x08028801",
+              "AKF_KIC_MAILBOX_SET" : "0x00000001"
+            },
+            "route-number" : "0",
+            "log" : "    dir   endpoint      epnum timestamp           msg\n    ====  ============  ===== ==================  ==================\n    [TX]       user05      36 0x0000000001ce2574  0x0085000000000000\n    [RX]       syslog       2 0x0000000001ce2adc  0x0050000000000007\n    [RX]       user04      35 0x0000000001ce2cf4  0x00a2000000000000\n    [TX]       user04      35 0x0000000001ce2dcc  0x0085000000000000\n    [RX]       user05      36 0x0000000001ce4d98  0x00a2000000000000\n    [TX]       user05      36 0x0000000001ce4f08  0x0085000000000000\n    [RX]       user06      37 0x0000000001ce5430  0x00a2000000000000\n    [TX]       user25      56 0x0000000001ce5510  0x00020000000001c8\n    [TX]       user06      37 0x0000000001ce55a0  0x0085000000000000\n    [RX]       user25      56 0x0000000001ce6778  0x00020000000001c8\n    [RX]   management       0 0x0000000001cf41cc  0x003000000000001d\n    [TX]   management       0 0x0000000001cf4264  0x004000000000001d\n    [RX]   management       0 0x0000000001de8424  0x003000000000001e\n    [TX]   management       0 0x0000000001de84c0  0x004000000000001e\n    [RX]   management       0 0x0000000001edc650  0x003000000000001f\n    [TX]   management       0 0x0000000001edc6e8  0x004000000000001f\n    [RX]   management       0 0x0000000001fd0784  0x0030000000000020\n    [TX]   management       0 0x0000000001fd07c0  0x0040000000000020\n    [RX]   management       0 0x00000000020c4a98  0x0030000000000021\n    [TX]   management       0 0x00000000020c4b30  0x0040000000000021\n    [RX]       user05      36 0x000000000211eb48  0x00a2000000000000\n    [TX]       user05      36 0x000000000211ecb4  0x0085000000000000\n    [RX]       user05      36 0x000000000212b05c  0x00a2000000000000\n    [TX]       user05      36 0x000000000212b3c4  0x0085000000000000\n    [RX]       user05      36 0x000000000212b610  0x00a2000000000000\n    [TX]       user05      36 0x000000000212b6f8  0x0085000000000000\n    [RX]   management       0 0x00000000021b8c08  0x0030000000000022\n    [TX]   management       0 0x00000000021b8ca0  0x0040000000000022\n    [RX]   management       0 0x00000000022acd60  0x0030000000000023\n    [TX]   management       0 0x00000000022acdf8  0x0040000000000023\n    [RX]   management       0 0x00000000023a1068  0x0030000000000024\n    [TX]   management       0 0x00000000023a1100  0x0040000000000024",
+            "mailbox-error" : "4"
+          }
+        ],
+        "crashlog-version" : "03.03",
+        "panic" : "NMI FIQ - AP-requested crash : asserting NMI via watchdog (p=0 e=0)"
+      }
+    },
+    {
+      "core" : "BTM",
+      "crashlog" : {
+        "scenario" : null,
+        "registers" : null,
+        "tasks" : [
+          {
+            "stack" : [
+              "0x0000000000098df6",
+              "0x0000000000099a3a",
+              "0x000000000009ee04",
+              "0x0000000000099784"
+            ],
+            "description" : "  0 rtk_ep_work | 025\/025 |   656\/1024  | SEMWAIT | 0x4c04a170"
+          },
+          {
+            "stack" : [
+              "0x0000000000097154",
+              "0x00000000000995e6",
+              "0x000000000009d188",
+              "0x0000000000099784"
+            ],
+            "description" : "  1 power | 000\/000 |   752\/1024  | WAITING | 0x4c040be8"
+          },
+          {
+            "stack" : [
+              "0x0000000000097154",
+              "0x00000000000995e6",
+              "0x000000000000355a",
+              "0x00000000000001e6",
+              "0x00000000ffffff02"
+            ],
+            "description" : "  2 maintenance_thread | 003\/003 |   784\/1536  | WAITING | 0x8"
+          },
+          {
+            "description" : "* 3 sirq_thread | 026\/026 |   696\/1024  | WAITING | 0x4"
+          },
+          {
+            "stack" : [
+              "0x0000000000098df6",
+              "0x00000000000995e6",
+              "0x000000000008e948",
+              "0x0000000000099784"
+            ],
+            "description" : "  4 hci_thread | 021\/021 |   696\/1024  | WAITING | 0x3"
+          },
+          {
+            "stack" : [
+              "0x0000000000098df6",
+              "0x00000000000995e6",
+              "0x000000000003066e",
+              "0x0000000000099784"
+            ],
+            "description" : "  5 sco_thread | 019\/019 |   160\/1024  | WAITING | 0x2"
+          },
+          {
+            "stack" : [
+              "0x0000000000097154",
+              "0x00000000000995e6",
+              "0x0000000000044caa",
+              "0x0000000000099784"
+            ],
+            "description" : "  6 link_manager_thread | 017\/017 |  1120\/2048  | WAITING | 0x1"
+          }
+        ],
+        "uuid" : null,
+        "call-stack" : {
+          "stack" : [
+            "0x000000000009be62",
+            "0x000000000009b9f0",
+            "0x000000000009b86e",
+            "0x000000000009e660",
+            "0x000000000009e508",
+            "0x000000000009c7fc",
+            "0x000000000009b034",
+            "0x0000000000097272",
+            "0x00000000fffffffd",
+            "0x0000000000097150",
+            "0x0000000000098e50",
+            "0x00000000000995e6",
+            "0x0000000000087026",
+            "0x0000000000099784",
+            "000000000000000000"
+          ],
+          "stack-description" : "Faulting task 3 Call Stack:"
+        },
+        "exception" : "0x22",
+        "mailboxes" : [
+          {
+            "registers" : {
+              "AKF_AP_OUTBOX_CTRL" : "0x08022201",
+              "AKF_KIC_INBOX_CTRL" : "0x0802ff01",
+              "AKF_KIC_MAILBOX_SET" : "0x00000001"
+            },
+            "route-number" : "0",
+            "log" : "    dir   endpoint      epnum timestamp           msg\n    ====  ============  ===== ==================  ==================\n    [RX]       user01      32 0x00000000021c25e4  0x2007000003fc11ab\n    [TX]       user01      32 0x00000000021c27e4  0x2007fc11000f245c\n    [TX]       user01      32 0x00000000021c284c  0x20071100ffff245d\n    [RX]       user01      32 0x00000000021d95b4  0x200701008d0001ac\n    [TX]       user01      32 0x00000000021e9e18  0x200700000013245e\n    [RX]       user01      32 0x00000000023f86d4  0x20070000030406ad\n    [TX]       user01      32 0x00000000023f8970  0x20070406000f245f\n    [TX]       user01      32 0x000000000241ddb0  0x2007000000052460\n    [TX]       user01      32 0x0000000002421908  0x20070500ffff2461\n    [RX]     crashlog       1 0x0000000002437400  0x0000000000000022",
+            "mailbox-error" : "4"
+          }
+        ],
+        "crashlog-version" : "03.03",
+        "panic" : "AP-requested crash - Message Log"
+      }
+    }
+  ],
+  "accessory_machine_config" : "\"AirPods2,1\"",
+  "usage_since_last_crash_user_facing" : 2170175,
+  "application-info" : {
+    "side" : "right",
+    "role" : "secondary"
+  },
+  "accessory_crashreporter_key" : "cc06b1d33f0df79ef854a55aeac004c2064c48c4",
+  "analytics_test_mode" : false,
+  "accessory_pid" : 8207,
+  "UI_country_code" : "US",
+  "accessory_os_version" : "60.1868006008000000.259|csv1:2.0.6|csv2:1.9.4|date:2024 5 28|updv:326",
+  "usage_since_last_crash" : 1287416,
+  "bug_type" : "305",
+  "log-version" : "1.0",
+  "accessory_fusing" : "prod",
+  "usage_since_last_crash_in_ear" : null
+}
